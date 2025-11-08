@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Forms</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Sign Up Form -->
+            <div class="col-md-6">
+                <div class="glass-card">
+                    <h2>Sign Up</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first name" name="first name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last name" name="last name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" name="country" id="country">
+                                <option value="">Select Country</option>
+                                <option value="india">India</option>
+                                <option value="united states">United States</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile</label>
+                            <input type="tel" class="form-control" id="mobile" name="mobile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <div class="d-flex mt-3 align-items-center justify-content-center">
+    <a href="./login.html" class="text-white text-decoration-none">Already have an account? Login</a>
+</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
