@@ -1,98 +1,126 @@
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  padding: 30px;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.form-control {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  border-radius: 10px;
-}
-
-.form-control:focus {
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: white;
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
-}
-
-.form-control::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.form-label {
-  color: white;
-  font-weight: 500;
-}
-
-.btn-primary {
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  color: white;
-  font-weight: 500;
-  padding: 10px 30px;
-  transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-  background: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
-}
-
-h2 {
-  color: white;
-  text-align: center;
-  margin-bottom: 25px;
-  font-weight: 600;
-}
-
-.form-select {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  border-radius: 10px;
-}
-
-.form-select:focus {
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: white;
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
-}
-
-textarea.form-control {
-  min-height: 100px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
 }
 
 .container {
-  max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .row {
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 400px;
+    max-width: 100%;
+}
+
+.glass-card h2,
+.glass-card h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.glass-card .form-label {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.glass-card .form-control,
+.glass-card .form-select {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 6px;
+    color: white !important;
+    padding: 5px 8px;
+    font-size: 13px;
+    height: 32px;
+}
+
+.glass-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.glass-card .form-control:focus,
+.glass-card .form-select:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25) !important;
+}
+
+.glass-card .btn-primary {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 6px;
+    padding: 5px;
+    font-weight: 500;
+    height: 32px;
+    font-size: 13px;
+    color: white !important;
+}
+
+.glass-card .btn-primary:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.glass-card .mb-3 {
+    margin-bottom: 10px !important;
 }
 
 @media (max-width: 768px) {
-  .glass-card {
-    padding: 20px;
-  }
+    body {
+        padding: 15px;
+    }
+    
+    .glass-card {
+        padding: 15px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .glass-card {
+        padding: 12px;
+        width: 320px;
+    }
+    
+    .glass-card h2,
+    .glass-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .glass-card .mb-3 {
+        margin-bottom: 8px !important;
+    }
 }
